@@ -6,11 +6,15 @@
 angular.module('app.controllers', [])
 
     // Path: /
-    .controller('HomeCtrl', ['$scope', '$location', '$window', function ($scope, $location, $window) {
+    .controller('HomeCtrl', ['$scope', '$location', '$window', "$http", function ($scope, $location, $window, $http) {
+        $scope.model = {};
         $scope.$root.title = 'AngularJS SPA Template for Visual Studio';
         $scope.$on('$viewContentLoaded', function () {
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
+        $scope.nextPage = function() {
+            $http.put("url here", $scope.model);
+        };
     }])
 
     // Path: /about
