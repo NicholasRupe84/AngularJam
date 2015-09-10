@@ -4,6 +4,8 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.Web.Http;
+
 namespace App.DestinationMarketplaceSPA
 {
     using System.Web;

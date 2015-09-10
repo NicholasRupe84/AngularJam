@@ -42,7 +42,7 @@ namespace App.DestinationMarketplaceSPA.Routing
             var handler = WebPageHttpHandler.CreateFromVirtualPath(filePath); // returns NULL if .cshtml file wasn't found
 
             if (handler == null)
-            {
+            {  
                 requestContext.RouteData.DataTokens.Add("templateUrl", "/views/404");
                 handler = WebPageHttpHandler.CreateFromVirtualPath("~/views/404.cshtml");
             }
