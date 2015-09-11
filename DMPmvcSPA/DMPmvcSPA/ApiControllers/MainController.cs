@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using DMPmvcSPA.Models;
 
 namespace DMPmvcSPA.Controllers
 {
@@ -28,8 +29,9 @@ namespace DMPmvcSPA.Controllers
         }
 
         // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(HomeViewModel viewModel)
         {
+            Console.WriteLine(viewModel.firstname);
         }
 
         // DELETE api/<controller>/5

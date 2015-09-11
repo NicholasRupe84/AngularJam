@@ -1,14 +1,16 @@
 ﻿@{
     PageData["title"] = "AngularJS SPA Template for Visual Studio";
 }
-<h2>Destination Marketplace</h2>
-<p>
-    First Name : <input type="text" ng-model="model.firstname" placeholder="Enter first name here">
-    Middle Name: <input type="text" ng-model="model.middlename" placeholder="Enter middle name here">
-    Last Name : <input type="text" ng-model="model.lastname" placeholder="Enter last name here">
-    <div>
-        Social Security : <input type="text" ng-model="model.socialSecurity" placeholder="Enter social security number here">
-        Date of Birth : <input type="text" ng-model="model.dateOfBirth" placeholder="Enter date of birth">
-    </div>
-</p>
-<div><input ng-click="nextPage()" type="button" name="submit" value="Submit" /></div>
+<div ng-controller="HomeCtrl">
+    <h2>Destination Marketplace</h2>
+    <p>
+        First Name : <input type="text" ng-model="model.firstname" placeholder="Enter first name here">
+        Middle Name: <input type="text" ng-model="model.middlename" placeholder="Enter middle name here">
+        Last Name : <input type="text" ng-model="model.lastname" placeholder="Enter last name here">
+        <div>
+            Social Security : <input type="text" ng-model="model.socialSecurity" placeholder="Enter social security number here">
+            Date of Birth : <input type="text" ng-model="model.dateOfBirth" placeholder="Enter date of birth">
+        </div>
+    </p>
+    <div><input ng-click="nextPage()" type="button" name="submit" value="Submit" /></div>
+</div>

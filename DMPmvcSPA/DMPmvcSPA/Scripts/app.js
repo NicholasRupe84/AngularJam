@@ -13,7 +13,7 @@ angular.module('app', ['ui.router', 'app.filters', 'app.services', 'app.directiv
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: '/views/index',
+                templateUrl: '../Views/Home/Index.cshtml',
                 controller: 'HomeCtrl'
 
             })

@@ -13,7 +13,7 @@ angular.module('app.controllers', [])
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
         $scope.nextPage = function() {
-            $http.put("api/Main/Next", $scope.model);
+            $http.put("../api/Main", $scope.model);
         };
     }])
 
