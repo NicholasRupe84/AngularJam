@@ -5,8 +5,9 @@ using System.Web;
 
 namespace DMPmvcSPA.Models
 {
-    public class SelectQuoteViewModel : ViewModelBase
+    public class ViewModelBase
     {
-        
+        public string pageName { get; set; }
+        public Person user { get; set; }
     }
 }

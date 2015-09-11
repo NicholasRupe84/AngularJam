@@ -10,13 +10,16 @@ namespace DMPmvcSPA.Controllers
 {
     public class DefaultController : ApiController
     {
-        // PUT api/<controller>/5
-        public string Put(DefaultViewModel viewModel)
+        public SelectQuoteViewModel Put(DefaultViewModel viewModel)
         {
             //process data here
             Models.User.populateUser(Database.GetData(viewModel.socialSecurity));
             
-            return "SelectQuote";
+            return new SelectQuoteViewModel
+            {
+                pageName = "SelectQuote",
+                user = Models.User.currentPerson
+            };
         }
     }
 }
