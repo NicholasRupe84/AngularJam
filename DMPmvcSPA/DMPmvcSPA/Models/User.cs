@@ -13,5 +13,20 @@ namespace DMPmvcSPA.Models
         {
             currentPerson = person;
         }
+
+        public static void updateAuto(bool autoSelected)
+        {
+            currentPerson.car = autoSelected;
+        }
+
+        public static void updateHome(bool homeSelected)
+        {
+            currentPerson.house = homeSelected;
+        }
+
+        public static void updateMotorcycle(bool motorcycleSelected)
+        {
+            currentPerson.motorcycle = motorcycleSelected;
+        }
     }
 }
