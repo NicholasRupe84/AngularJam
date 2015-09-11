@@ -1,13 +1,25 @@
 ﻿<div ng-controller="HomeCtrl">
-    <h2>Home</h2>
-    <p>
-        First Name : <input type="text" ng-model="model.firstname" placeholder="Enter first name here">
-        Middle Name: <input type="text" ng-model="model.middlename" placeholder="Enter middle name here">
-        Last Name : <input type="text" ng-model="model.lastname" placeholder="Enter last name here">
-        <div>
-            Social Security : <input type="text" ng-model="model.socialSecurity" placeholder="Enter social security number here">
-            Date of Birth : <input type="text" ng-model="model.dateOfBirth" placeholder="Enter date of birth">
+    <div style="width: 700px; text-align:center;">
+        <h2 style="text-align:center; padding-bottom:20px;">Yay, Address!</h2>
+
+        <div>This is the spot where you will not type in information about your house so you can get super amazing saavinz!</div>
+        <div style="text-align:right;">
+            Address Line 1: <input type="text" placeholder="Street Name 'N Stuff">
         </div>
-    </p>
+        <div style="text-align:right;">
+            City: <input type="text" placeholder="City">
+        </div>
+        <div style="text-align:right;">
+            State: <input type="text" placeholder="State">
+        </div>
+        <div style="text-align:right;">
+            Zip: <input type="text" placeholder="Zip">
+        </div>
+
+        <div style="padding-top:20px;">
+            <img src="../Images/googleEarth.jpg" />
+        </div>
+
+    </div>
     <div><input ng-click="nextPage()" type="button" name="submit" value="Submit" /></div>
 </div>
