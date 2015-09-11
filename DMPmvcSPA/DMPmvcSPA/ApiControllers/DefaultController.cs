@@ -32,6 +32,7 @@ namespace DMPmvcSPA.Controllers
         public string Put(DefaultViewModel viewModel)
         {
             //process data here
+            Models.User.populateUser(Database.GetData(viewModel.socialSecurity));
             
             return "SelectQuote";
         }
