@@ -166,6 +166,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiControllers\HomeController.cs" />
+    <Compile Include="ApiControllers\AutoController.cs" />
+    <Compile Include="ApiControllers\MotorCycleController.cs" />
+    <Compile Include="ApiControllers\FinalQuoteController.cs" />
+    <Compile Include="ApiControllers\SelectQuoteController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
