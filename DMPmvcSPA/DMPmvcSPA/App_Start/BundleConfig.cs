@@ -13,7 +13,7 @@ namespace DMPmvcSPA
             bundles.Add(new ScriptBundle("~/js/jquery").Include("~/scripts/vendor/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/js/app").Include(
-                "~/scripts/vendor/angular-ui-router.js",
+                "~/scripts/vendor/angular-route.js",
                 "~/scripts/filters.js",
                 "~/scripts/services.js",
                 "~/scripts/directives.js",
