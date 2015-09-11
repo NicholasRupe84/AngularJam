@@ -209,8 +209,10 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\car.png" />
+    <Content Include="Images\googleEarth.jpg" />
     <Content Include="Images\home.png" />
     <Content Include="Images\Mcycle.png" />
+    <Content Include="Images\Progressive Logo.jpg" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

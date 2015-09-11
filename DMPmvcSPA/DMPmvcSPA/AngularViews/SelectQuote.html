@@ -1,13 +1,24 @@
-﻿<div ng-controller="SelectQuoteCtrl">
+﻿<div style="text-align: center;" ng-controller="SelectQuoteCtrl">
     <h2>Select Quote</h2>
-    <p>
-        First Name : <input type="text" ng-model="model.firstname" placeholder="Enter first name here">
-        Middle Name: <input type="text" ng-model="model.middlename" placeholder="Enter middle name here">
-        Last Name : <input type="text" ng-model="model.lastname" placeholder="Enter last name here">
-        <div>
-            Social Security : <input type="text" ng-model="model.socialSecurity" placeholder="Enter social security number here">
-            Date of Birth : <input type="text" ng-model="model.dateOfBirth" placeholder="Enter date of birth">
+    <div>
+        <div ng-if="person.car">
+            <div>Auto</div>
+            <div>
+                <img src="../Images/car.png" />
+            </div>
         </div>
-    </p>
+        <div ng-if="person.house">
+            <div>Home</div>
+            <div>
+                <img src="../Images/home.png" />
+            </div>
+        </div>
+        <div ng-if="person.motorcycle">
+            <div>Motorcycle</div>
+            <div>
+                <img src="../Images/Mcycle.png" />
+            </div>
+        </div>
+    </div>
     <div><input ng-click="nextPage()" type="button" name="submit" value="Submit" /></div>
 </div>
