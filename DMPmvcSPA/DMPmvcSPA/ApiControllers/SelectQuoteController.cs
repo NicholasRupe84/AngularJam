@@ -12,10 +12,10 @@ namespace DMPmvcSPA.Controllers
     {
         public SelectQuoteViewModel Put(SelectQuoteViewModel viewModel)
         {
-            var user = Models.User.currentPerson;
-            Models.User.updateAuto(viewModel.updatedCar);
-            Models.User.updateHome(viewModel.updatedHome);
-            Models.User.updateMotorcycle(viewModel.updatedMotorcycle);
+//            var user = Models.User.currentPerson;
+//            Models.User.updateAuto(viewModel.updatedCar);
+//            Models.User.updateHome(viewModel.updatedHome);
+//            Models.User.updateMotorcycle(viewModel.updatedMotorcycle);
 
             string pageName = "";
 

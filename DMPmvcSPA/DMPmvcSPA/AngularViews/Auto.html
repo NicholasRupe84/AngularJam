@@ -1,13 +1,30 @@
 ﻿<div ng-controller="AutoCtrl">
-    <h2>Auto</h2>
-    <p>
-        First Name : <input type="text" ng-model="model.firstname" placeholder="Enter first name here">
-        Middle Name: <input type="text" ng-model="model.middlename" placeholder="Enter middle name here">
-        Last Name : <input type="text" ng-model="model.lastname" placeholder="Enter last name here">
-        <div>
-            Social Security : <input type="text" ng-model="model.socialSecurity" placeholder="Enter social security number here">
-            Date of Birth : <input type="text" ng-model="model.dateOfBirth" placeholder="Enter date of birth">
+    <div style="width: 900px; text-align:center;">
+        <h2 style="text-align:center; padding-bottom:20px;">Give us some info about your car!</h2>
+
+        <div style="padding-bottom: 20px">Please provide as much information as you can about your car</div>
+        <div style="padding-left: 20px">
+            <span style="float: left; padding-right: 20px"><img src="../Images/car.jpg" /></span>
+            <div style="text-align:right;">
+                Make: <input type="text" placeholder="Make">
+            </div>
+            <div style="text-align:right;">
+                Model: <input type="text" placeholder="Model">
+            </div>
+            <div style="text-align:right;">
+                Year: <input type="text" placeholder="Year">
+            </div>
+            <div style="text-align:right;">
+                Body Type: <input type="text" placeholder="Body Type">
+            </div>
+            <div style="text-align:right;">
+                Number of Years Owned: <input type="text" placeholder="Years Owned">
+            </div>
+            <div style="text-align:right;">
+                Primary Use: <input type="text" placeholder="Primary Use">
+            </div
+            <div style="text-align:right;"><input ng-click="nextPage()" type="button" name="submit" value="Submit" /></div>
         </div>
-    </p>
-    <div><input ng-click="nextPage()" type="button" name="submit" value="Submit" /></div>
+
+    </div>
 </div>
