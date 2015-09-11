@@ -29,9 +29,11 @@ namespace DMPmvcSPA.Controllers
         }
 
         // PUT api/<controller>/5
-        public void Put(HomeViewModel viewModel)
+        public string Put(HomeViewModel viewModel)
         {
-            Console.WriteLine(viewModel.firstname);
+            //process data here
+
+            return "SelectQuote";
         }
 
         // DELETE api/<controller>/5
