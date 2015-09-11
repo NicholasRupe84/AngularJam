@@ -26,7 +26,7 @@ angular.module('app.controllers', [])
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
         $scope.nextPage = function () {
-            $http.put("../api/Default", $scope.model).then(function (result) {
+            $http.put("../api/Home", $scope.model).then(function (result) {
                 $location.path(result.data.replace(/"/g, ""));
             });
         };
@@ -39,7 +39,7 @@ angular.module('app.controllers', [])
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
         $scope.nextPage = function () {
-            $http.put("../api/Default", $scope.model).then(function (result) {
+            $http.put("../api/Auto", $scope.model).then(function (result) {
                 $location.path(result.data.replace(/"/g, ""));
             });
         };
@@ -52,7 +52,7 @@ angular.module('app.controllers', [])
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
         $scope.nextPage = function () {
-            $http.put("../api/Default", $scope.model).then(function (result) {
+            $http.put("../api/Motorcycle", $scope.model).then(function (result) {
                 $location.path(result.data.replace(/"/g, ""));
             });
         };
@@ -65,7 +65,7 @@ angular.module('app.controllers', [])
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
         $scope.nextPage = function () {
-            $http.put("../api/Default", $scope.model).then(function (result) {
+            $http.put("../api/FinalQuote", $scope.model).then(function (result) {
                 $location.path(result.data.replace(/"/g, ""));
             });
         };
@@ -78,7 +78,7 @@ angular.module('app.controllers', [])
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
         $scope.nextPage = function () {
-            $http.put("../api/Default", $scope.model).then(function (result) {
+            $http.put("../api/SelectQuote", $scope.model).then(function (result) {
                 $location.path(result.data.replace(/"/g, ""));
             });
         };

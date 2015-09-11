@@ -29,7 +29,7 @@ namespace DMPmvcSPA.Controllers
         }
 
         // PUT api/<controller>/5
-        public string Put(HomeViewModel viewModel)
+        public string Put(DefaultViewModel viewModel)
         {
             //process data here
 

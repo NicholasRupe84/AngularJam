@@ -33,7 +33,7 @@ namespace DMPmvcSPA.Controllers
         {
             //process data here
 
-            return "SelectQuote";
+            return "Motorcycle";
         }
 
         // DELETE api/<controller>/5
