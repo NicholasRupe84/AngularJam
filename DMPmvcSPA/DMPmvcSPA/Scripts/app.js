@@ -22,6 +22,8 @@ angular.module('app', ['ngRoute', 'app.filters', 'app.services', 'app.directives
                 templateUrl: "/AngularViews/Motorcycle.html"
             }).when("/Home", {
                 templateUrl: "/AngularViews/Home.html"
+            }).when("/MoreInfo", {
+                templateUrl: "/AngularViews/MoreInfo.html"
             });
         }
     ]);

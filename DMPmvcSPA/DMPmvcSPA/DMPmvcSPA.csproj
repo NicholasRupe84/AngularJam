@@ -170,6 +170,7 @@
     <Compile Include="ApiControllers\HomeController.cs" />
     <Compile Include="ApiControllers\MotorcycleController.cs" />
     <Compile Include="ApiControllers\FinalQuoteController.cs" />
+    <Compile Include="ApiControllers\MoreInfoController.cs" />
     <Compile Include="ApiControllers\SelectQuoteController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\MoreInfoViewModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Database.cs" />
     <Compile Include="Models\FinalQuoteViewModel.cs" />
@@ -194,6 +196,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularViews\MoreInfo.html" />
     <Content Include="AngularViews\Home.html" />
     <Content Include="AngularViews\FinalQuote.html" />
     <Content Include="AngularViews\Motorcycle.html" />
@@ -205,6 +208,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\car.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\Mcycle.png" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
