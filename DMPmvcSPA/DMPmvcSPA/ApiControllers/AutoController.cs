@@ -10,9 +10,13 @@ namespace DMPmvcSPA.Controllers
 {
     public class AutoController : ApiController
     {
-        public string Put(AutoViewModel viewModel)
+        public AutoViewModel Put(AutoViewModel viewModel)
         {
-            return "Home";
+            return new AutoViewModel
+            {
+                user = Models.User.currentPerson,
+                pageName = "Home"
+            };
         }
     }
 }

@@ -10,11 +10,15 @@ namespace DMPmvcSPA.Controllers
 {
     public class HomeController : ApiController
     {
-        public string Put(HomeViewModel viewModel)
+        public HomeViewModel Put(HomeViewModel viewModel)
         {
             //process data here
 
-            return "Motorcycle";
+            return new HomeViewModel
+            {
+                user = Models.User.currentPerson,
+                pageName = "Motorcycle"
+            };
         }
     }
 }

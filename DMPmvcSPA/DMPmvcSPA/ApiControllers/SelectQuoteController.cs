@@ -10,11 +10,15 @@ namespace DMPmvcSPA.Controllers
 {
     public class SelectQuoteController : ApiController
     {
-        public string Put(SelectQuoteViewModel viewModel)
+        public SelectQuoteViewModel Put(SelectQuoteViewModel viewModel)
         {
             //process data
 
-            return "Auto";
+            return new SelectQuoteViewModel
+            {
+                user = Models.User.currentPerson,
+                pageName = "Auto"
+            };
         }
     }
 }

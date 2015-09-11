@@ -10,9 +10,13 @@ namespace DMPmvcSPA.Controllers
 {
     public class FinalQuoteController : ApiController
     {
-        public string Put(FinalQuoteViewModel viewModel)
+        public FinalQuoteViewModel Put(FinalQuoteViewModel viewModel)
         {
-            return "Complete";
+            return new FinalQuoteViewModel
+            {
+                user = Models.User.currentPerson,
+                pageName = "Complete"
+            };
         }
     }
 }

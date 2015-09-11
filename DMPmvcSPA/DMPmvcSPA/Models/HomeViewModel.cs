@@ -5,7 +5,7 @@ using System.Web;
 
 namespace DMPmvcSPA.Models
 {
-    public class HomeViewModel
+    public class HomeViewModel : ViewModelBase
     {
         public string firstname { get; set; }
         public string middlename { get; set; }

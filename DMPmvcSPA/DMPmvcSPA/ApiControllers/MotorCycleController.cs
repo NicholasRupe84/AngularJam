@@ -10,9 +10,13 @@ namespace DMPmvcSPA.Controllers
 {
     public class MotorcycleController : ApiController
     {
-        public string Put(MotorcycleViewModel viewModel)
+        public MotorcycleViewModel Put(MotorcycleViewModel viewModel)
         {
-            return "FinalQuote";
+            return new MotorcycleViewModel
+            {
+                user = Models.User.currentPerson,
+                pageName = "FinalQuote"
+            };
         }
     }
 }
