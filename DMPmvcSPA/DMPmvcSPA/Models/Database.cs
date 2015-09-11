@@ -22,7 +22,7 @@ namespace DMPmvcSPA.Models
                 firstName = "Bob",
                 middleName = "G",
                 lastName = "Smith",
-                ssn = "000000000",
+                ssn = "000-00-0000",
                 car = true,
                 house = true,
                 motorcycle = true
@@ -32,6 +32,7 @@ namespace DMPmvcSPA.Models
                 firstName = "Khasan",
                 middleName = "Fleur Ó",
                 lastName = "Floinn",
+                ssn = "111-11-1111",
                 car = true,
                 house = true,
                 motorcycle = false
@@ -41,6 +42,7 @@ namespace DMPmvcSPA.Models
                 firstName = "Shahrokh",
                 middleName = "Ahmed",
                 lastName = "Markovic",
+                ssn = "222-22-2222",
                 car = true,
                 house = false,
                 motorcycle = false
@@ -50,6 +52,7 @@ namespace DMPmvcSPA.Models
                 firstName = "Aygün",
                 middleName = "Amalthea",
                 lastName = "Chvátal",
+                ssn = "333-33-3333",
                 car = false,
                 house = false,
                 motorcycle = false
@@ -59,6 +62,7 @@ namespace DMPmvcSPA.Models
                 firstName = "Amos",
                 middleName = "Fulco",
                 lastName = "Klerkx",
+                ssn = "444-44-4444",
                 car = false,
                 house = true,
                 motorcycle = true
@@ -68,6 +72,7 @@ namespace DMPmvcSPA.Models
                 firstName = "Ignacy",
                 middleName = "Chiemeka",
                 lastName = "McCabe",
+                ssn = "555-55-5555",
                 car = false,
                 house = false,
                 motorcycle = true
@@ -77,6 +82,7 @@ namespace DMPmvcSPA.Models
                 firstName = "Sigurd",
                 middleName = "Mallory",
                 lastName = "Leggièri",
+                ssn = "666-66-6666",
                 car = false,
                 house = false,
                 motorcycle = false
@@ -86,6 +92,7 @@ namespace DMPmvcSPA.Models
                 firstName = "Cedric",
                 middleName = "Lana",
                 lastName = "Di Pietro",
+                ssn = "777-77-7777",
                 car = true,
                 house = false,
                 motorcycle = true
