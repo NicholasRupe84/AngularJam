@@ -32,6 +32,10 @@ namespace DMPmvcSPA.Controllers
             {
                 pageName = "Motorcycle";
             }
+            else
+            {
+                pageName = "Auto";
+            }
 
             return new SelectQuoteViewModel
             {

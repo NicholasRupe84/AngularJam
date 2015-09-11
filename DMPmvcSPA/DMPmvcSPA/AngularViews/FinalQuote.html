@@ -1,13 +1,46 @@
 ﻿<div ng-controller="FinalQuoteCtrl">
-    <h2>Final Quote</h2>
-    <p>
-        First Name : <input type="text" ng-model="model.firstname" placeholder="Enter first name here">
-        Middle Name: <input type="text" ng-model="model.middlename" placeholder="Enter middle name here">
-        Last Name : <input type="text" ng-model="model.lastname" placeholder="Enter last name here">
-        <div>
-            Social Security : <input type="text" ng-model="model.socialSecurity" placeholder="Enter social security number here">
-            Date of Birth : <input type="text" ng-model="model.dateOfBirth" placeholder="Enter date of birth">
-        </div>
-    </p>
-    <div><input ng-click="nextPage()" type="button" name="submit" value="Submit" /></div>
+
+    <section class="featured">
+        <table>
+            <tr>
+                <td>
+                    <div class="content-wrapper">
+                        <hgroup class="title">
+                            <h1>Final Quote</h1>
+                        </hgroup>
+                        <p>
+                            Bundle Your Policies for Big Savings
+                        </p>
+                        <p>
+
+                            <img src="../Images/car.png"/>
+                            <input checked="checked" id="checkcar" name="car" type="checkbox" value="true"/><br/>
+                            <img src="../Images/home.png"/>
+                            <input checked="checked" id="checkMC" name="mcycle" type="checkbox" value="true"/><br/>
+                            <img src="../Images/Mcycle.png"/>
+                            <input checked="checked" id="checkhome" name="home" type="checkbox" value="true"/><br/>
+
+                        </p>
+                    </div>
+                </td>
+                <td style="padding-left: 50px;">
+                    <div class="content-wrapper">
+                        <hgroup class="title">
+                            <h1>Your Quote Price and Savings</h1>
+                        </hgroup>
+
+                        <p>
+                            Auto, home , Motorcyle. Start Today $525.00
+                            <br /> <br /> <br />
+                            Total bundle Savings : $458.00
+                            <br /> <br /> <br />
+                            <input type="button" name="buttonBuy" class="button1" value="Buy My Bundle" />
+                        </p>
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+
+    </section>
 </div>
