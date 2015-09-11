@@ -10,24 +10,6 @@ namespace DMPmvcSPA.Controllers
 {
     public class DefaultController : ApiController
     {
-        // GET api/<controller>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<controller>/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<controller>
-        public void Post([FromBody]string value)
-        {
-        }
-
         // PUT api/<controller>/5
         public string Put(DefaultViewModel viewModel)
         {
@@ -35,11 +17,6 @@ namespace DMPmvcSPA.Controllers
             Models.User.populateUser(Database.GetData(viewModel.socialSecurity));
             
             return "SelectQuote";
-        }
-
-        // DELETE api/<controller>/5
-        public void Delete(int id)
-        {
         }
     }
 }
