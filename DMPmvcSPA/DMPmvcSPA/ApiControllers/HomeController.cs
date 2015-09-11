@@ -12,12 +12,22 @@ namespace DMPmvcSPA.Controllers
     {
         public HomeViewModel Put(HomeViewModel viewModel)
         {
-            //process data here
+            var user = Models.User.currentPerson;
+            string pageName = "";
+
+            if (user.motorcycle == true)
+            {
+                pageName = "Motorcycle";
+            }
+            else
+            {
+                pageName = "FinalQuote";
+            }
 
             return new HomeViewModel
             {
                 user = Models.User.currentPerson,
-                pageName = "Motorcycle"
+                pageName = pageName
             };
         }
     }

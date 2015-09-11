@@ -19,24 +19,6 @@ namespace DMPmvcSPA.Controllers
 
             string pageName = "";
 
-
-//            if (user.car == true)
-//            {
-//                pageName = "Auto";
-//            }
-//            else if (user.house == true)
-//            {
-//                pageName = "Home";
-//            }
-//            else if (user.motorcycle == true)
-//            {
-//                pageName = "Motorcycle";
-//            }
-//            else
-//            {
-//                pageName = "Auto";
-//            }
-
             return new SelectQuoteViewModel
             {
                 user = Models.User.currentPerson,
