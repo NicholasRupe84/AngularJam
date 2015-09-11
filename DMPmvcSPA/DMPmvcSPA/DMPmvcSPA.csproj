@@ -181,6 +181,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\Database.cs" />
     <Compile Include="Models\FinalQuoteViewModel.cs" />
     <Compile Include="Models\SelectQuoteViewModel.cs" />
