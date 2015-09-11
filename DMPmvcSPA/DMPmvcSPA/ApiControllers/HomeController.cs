@@ -8,7 +8,7 @@ using DMPmvcSPA.Models;
 
 namespace DMPmvcSPA.Controllers
 {
-    public class MainController : ApiController
+    public class HomeController : ApiController
     {
         // GET api/<controller>
         [HttpGet]

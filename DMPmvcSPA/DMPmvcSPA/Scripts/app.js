@@ -11,6 +11,16 @@ angular.module('app', ['ngRoute', 'app.filters', 'app.services', 'app.directives
     .config([
         '$routeProvider', function ($routeProvider) {
             $routeProvider.when("/", {
+                templateUrl: "/AngularViews/Default.html"
+            }).when("/SelectQuote", {
+                templateUrl: "/AngularViews/SelectQuote.html"
+            }).when("/Auto", {
+                templateUrl: "/AngularViews/Auto.html"
+            }).when("/FinalQuote", {
+                templateUrl: "/AngularViews/FinalQuote.html"
+            }).when("/Motorcycle", {
+                templateUrl: "/AngularViews/Motorcycle.html"
+            }).when("/Home", {
                 templateUrl: "/AngularViews/Home.html"
             });
         }

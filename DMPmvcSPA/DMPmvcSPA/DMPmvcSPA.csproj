@@ -166,9 +166,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiControllers\HomeController.cs" />
     <Compile Include="ApiControllers\AutoController.cs" />
-    <Compile Include="ApiControllers\MotorCycleController.cs" />
+    <Compile Include="ApiControllers\HomeController.cs" />
+    <Compile Include="ApiControllers\MotorcycleController.cs" />
     <Compile Include="ApiControllers\FinalQuoteController.cs" />
     <Compile Include="ApiControllers\SelectQuoteController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -176,8 +176,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="ApiControllers\MainController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="ApiControllers\DefaultController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -186,6 +186,11 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularViews\Home.html" />
+    <Content Include="AngularViews\FinalQuote.html" />
+    <Content Include="AngularViews\Motorcycle.html" />
+    <Content Include="AngularViews\SelectQuote.html" />
+    <Content Include="AngularViews\Auto.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -495,7 +500,7 @@
     <Content Include="Scripts\vendor\jquery-2.0.3.js" />
     <Content Include="Scripts\vendor\jquery-2.0.3.min.js" />
     <None Include="Scripts\_references.js" />
-    <Content Include="AngularViews\Home.html" />
+    <Content Include="AngularViews\Default.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -507,9 +512,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Main\About.cshtml" />
+    <Content Include="Views\Main\Contact.cshtml" />
+    <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Scripts\vendor\angular-animate.min.js.map" />
     <Content Include="Scripts\vendor\angular-cookies.min.js.map" />

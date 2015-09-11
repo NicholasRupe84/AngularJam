@@ -6,36 +6,82 @@
 angular.module('app.controllers', [])
 
     // Path: /
-    .controller('HomeCtrl', ['$scope', '$location', '$window', "$http", function ($scope, $location, $window, $http) {
+    .controller('DefaultCtrl', ['$scope', '$location', '$window', "$http", function ($scope, $location, $window, $http) {
         $scope.model = {};
         $scope.$root.title = 'AngularJS SPA Template for Visual Studio';
         $scope.$on('$viewContentLoaded', function () {
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
         $scope.nextPage = function() {
-            $http.put("../api/Main", $scope.model);
+            $http.put("../api/Default", $scope.model).then(function(result) {
+                $location.path(result.data.replace(/"/g, ""));
+            });
         };
     }])
 
-    // Path: /about
-    .controller('AboutCtrl', ['$scope', '$location', '$window', function ($scope, $location, $window) {
-        $scope.$root.title = 'AngularJS SPA | About';
+    .controller('HomeCtrl', ['$scope', '$location', '$window', "$http", function ($scope, $location, $window, $http) {
+        $scope.model = {};
+        $scope.$root.title = 'AngularJS SPA Template for Visual Studio';
         $scope.$on('$viewContentLoaded', function () {
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
+        $scope.nextPage = function () {
+            $http.put("../api/Default", $scope.model).then(function (result) {
+                $location.path(result.data.replace(/"/g, ""));
+            });
+        };
     }])
 
-    // Path: /login
-    .controller('LoginCtrl', ['$scope', '$location', '$window', function ($scope, $location, $window) {
-        $scope.$root.title = 'AngularJS SPA | Sign In';
-        // TODO: Authorize a user
-        $scope.login = function () {
-            $location.path('/');
-            return false;
-        };
+    .controller('AutoCtrl', ['$scope', '$location', '$window', "$http", function ($scope, $location, $window, $http) {
+        $scope.model = {};
+        $scope.$root.title = 'AngularJS SPA Template for Visual Studio';
         $scope.$on('$viewContentLoaded', function () {
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
+        $scope.nextPage = function () {
+            $http.put("../api/Default", $scope.model).then(function (result) {
+                $location.path(result.data.replace(/"/g, ""));
+            });
+        };
+    }])
+
+    .controller('MotorcycleCtrl', ['$scope', '$location', '$window', "$http", function ($scope, $location, $window, $http) {
+        $scope.model = {};
+        $scope.$root.title = 'AngularJS SPA Template for Visual Studio';
+        $scope.$on('$viewContentLoaded', function () {
+            $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
+        });
+        $scope.nextPage = function () {
+            $http.put("../api/Default", $scope.model).then(function (result) {
+                $location.path(result.data.replace(/"/g, ""));
+            });
+        };
+    }])
+
+    .controller('FinalQuoteCtrl', ['$scope', '$location', '$window', "$http", function ($scope, $location, $window, $http) {
+        $scope.model = {};
+        $scope.$root.title = 'AngularJS SPA Template for Visual Studio';
+        $scope.$on('$viewContentLoaded', function () {
+            $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
+        });
+        $scope.nextPage = function () {
+            $http.put("../api/Default", $scope.model).then(function (result) {
+                $location.path(result.data.replace(/"/g, ""));
+            });
+        };
+    }])
+
+    .controller('SelectQuoteCtrl', ['$scope', '$location', '$window', "$http", function ($scope, $location, $window, $http) {
+        $scope.model = {};
+        $scope.$root.title = 'AngularJS SPA Template for Visual Studio';
+        $scope.$on('$viewContentLoaded', function () {
+            $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
+        });
+        $scope.nextPage = function () {
+            $http.put("../api/Default", $scope.model).then(function (result) {
+                $location.path(result.data.replace(/"/g, ""));
+            });
+        };
     }])
 
     // Path: /error/404
